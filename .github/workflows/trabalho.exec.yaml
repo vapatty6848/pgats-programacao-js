@@ -1,0 +1,35 @@
+# CI de Nivel 01 - Disparo manual a partir de um click
+
+
+name: 'Execução Manual'
+
+
+on:
+  workflow_dispatch:
+
+jobs:
+  tests:
+
+
+    runs-on:
+      ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v2
+
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 22.x
+
+      - name: Instalando yarn
+        run: npm install -g yarn
+
+
+      - name: Instalando dependências
+        run: yarn
+
+
+      - name: Executando os testes
+        run: yarn run test
