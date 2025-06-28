@@ -1,8 +1,8 @@
 /**
- 
+
   describe -> agrupador de testes
   it       -> implementação do teste
-  
+
   TDD
     crio o teste
     vejo o teste falhar
@@ -21,16 +21,8 @@ import assert from 'node:assert'
 describe('Testes do Projeto', () => {
   it(`deve exibir o nome do dog com letras maiúsculas`, () => {
     assert.strictEqual(exibirNomeDogFormatado('Mimosa'), 'MIMOSA')
-    
+
     // verifique se: <valor atual> É IGUAL A <valor esperado>
-  })
-
-  it('primeiro teste', () => {
-
-  })
-
-  it('segundo teste', () => {
-    throw new Error()
   })
 
 })
